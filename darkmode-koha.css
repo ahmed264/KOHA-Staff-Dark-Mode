@@ -1,0 +1,99 @@
+/* Global Dark Mode Styles */
+.koha-darkmode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Apply to body */
+.koha-darkmode body {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Tables */
+.koha-darkmode table {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+.koha-darkmode th, .koha-darkmode td {
+    border-color: #333 !important;
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* Links */
+.koha-darkmode a {
+    color: #80cbc4 !important;
+}
+
+/* Buttons */
+.koha-darkmode button, .koha-darkmode input[type="submit"], .koha-darkmode input[type="button"] {
+    background-color: #333 !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+    transition: background 0.3s ease-in-out;
+}
+.koha-darkmode button:hover, .koha-darkmode input[type="submit"]:hover {
+    background-color: #555 !important;
+}
+
+/* Forms & Inputs */
+.koha-darkmode input, .koha-darkmode select, .koha-darkmode textarea {
+    background-color: #222 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444 !important;
+}
+
+/* Navigation Menus */
+.koha-darkmode .navbar, .koha-darkmode .nav {
+    background-color: #1b1b1b !important;
+    color: #e0e0e0 !important;
+}
+
+/* Alerts & Messages */
+.koha-darkmode .alert, .koha-darkmode .message {
+    background-color: #2b2b2b !important;
+    border-color: #444 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Modals */
+.koha-darkmode .modal-content {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* Tables in Datatables */
+.koha-darkmode .dataTables_wrapper {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+.koha-darkmode .dataTables_wrapper th, .koha-darkmode .dataTables_wrapper td {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #333 !important;
+}
+
+/* Loader/Spinners */
+.koha-darkmode .spinner-border, .koha-darkmode .spinner-grow {
+    border-color: #80cbc4 !important;
+}
+
+/* Scrollbar */
+.koha-darkmode ::-webkit-scrollbar {
+    width: 8px;
+}
+.koha-darkmode ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+.koha-darkmode ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Animations & Smooth Transitions */
+.koha-darkmode * {
+    transition: all 0.3s ease-in-out;
+}

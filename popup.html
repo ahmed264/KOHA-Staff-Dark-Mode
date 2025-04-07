@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOHA Dark Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 280px;
+      text-align: center;
+      background: #1e1e1e;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #333;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .toggle-label {
+      font-size: 14px;
+    }
+    .toggle {
+      position: relative;
+      width: 50px;
+      height: 24px;
+    }
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background: #555;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background: #4caf50;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .input-container {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 10px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+<img src="icons/icon.png" alt="koha logo" width="14px">	
+  <h3>KOHA Dark Mode</h3>
+
+  <div class="toggle-container">
+    <span class="toggle-label">Enable Dark Mode</span>
+    <label class="toggle">
+      <input type="checkbox" id="toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div>
+    <p>KOHA URL:</p>
+    <div class="input-container">
+      <input type="text" id="koha-url" placeholder="Enter KOHA URL">
+      <button id="save-url">Save</button>
+    </div>
+  </div>
+<hr>
+  <script src="popup.js"></script>
+</body>
+</html>
